@@ -1,0 +1,7 @@
+sources:
+  - name: snowflake         # logical name of the source
+    database: DEVDB  # optional, name of the Snowflake database
+    schema: Bronze      # required: name of the schema
+    tables:
+      - name: DBT_RAW_DATA  # name of the table in Snowflake
+        description: "Raw data table from source system"
