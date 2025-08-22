@@ -5,3 +5,5 @@ sources:
     tables:
       - name: DBT_RAW_DATA  # name of the table in Snowflake
         description: "Raw data table from source system"
+      - name: MACRO_LAB  # name of the table in Snowflake
+        description: "Raw data table from source system"
