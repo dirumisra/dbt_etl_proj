@@ -1,0 +1,6 @@
+customer_id,first_name,last_name,email,country
+C001,  dhiraj  ,Mishra, DHIRAJ@example.com , India
+C002,pooja,  sharma ,pooja.sharma@Example.com,India
+C003,JOHN,doe,john.doe@example.com, USA
+C004,,Singh,  ,India
+C005,  aNNe ,  o'neil , anne.oneil@example.com,uk
