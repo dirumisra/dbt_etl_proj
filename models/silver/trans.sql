@@ -28,6 +28,7 @@ SELECT
 
     -- Convert email_raw to lowercase for standardization
     LOWER(email_raw) AS Email_ID,
+    MD5(email_raw) AS Email_Hash,
 
     -- Find '@' position in email_raw to slice the local part from the domain
     lower(SUBSTR(email_raw,1,POSITION('@' IN email_raw)-1)) AS LocalPart,
@@ -72,7 +73,7 @@ SELECT
     json_profile,
 
     -- Select mixed code data as is
-    code_mixed,
+    TRANSLATE(code_mixed,'AEIOUaeiou','12345') AS Code_Mixed,
 
     -- Remove leading whitespace from padded_left_raw
     LTRIM(padded_left_raw) AS Padded_Left,
